@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>UTS</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="single is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<h1><a href="index.html">UTS ALPRO</a></h1>
+			<nav class="links">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+				</ul>
+			</nav>
+			</ul>
+			</nav>
+		</header>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Post -->
+			<article class="post">
+				<header>
+					<div class="title">
+						<h2><a href="#"></a>Menghitung Rata-Rata</h2>
+						<p>Pada bagian ini, anda akan melihat bagaimana algoritma dalam menghitung rata-rata dari
+							beberapa bilangan.</p>
+					</div>
+					<div class="meta">
+						<a href="#" class="author"><span class="name">Andrew Steine</span><img src="images/avatar2.jpg"
+								alt="" /></a>
+						<a href="#" class="author"><span class="name">Michael Azarya</span><img src="images/avatar.jpg"
+								alt="" /></a>
+					</div>
+				</header>
+				<h3 class="sub-header">Deskripsi</h3>
+				<p> Menghitung rata rata dapat dilakukan dengan menambahkan nilai dari variabel lalu membagi total nilai
+					variabel
+					tersebut berdasarkan jumlah variabel yang ada</p>
+				<h3 class="sub-header">Flowchart</h3>
+				<span class="image featured"><img src="images/rata-rata.png" alt="" /></span>
+				<h3 class="sub-header">Pseudocode</h3>
+				<p> 1. mulai <br>
+					2. input nilai <br>
+					3. i&lt;=n? jika tidak = -na <br>
+					4. input nilai number <br>
+					5. sum += number <br>
+					6. i++ <br>
+					7. average = sum / n <br>
+					8. cout average <br>
+					9. selesai </p>
+				<h3 class="sub-header">code in c++</h3>
+				<pre class="code-block">
+#include &lt;iostream&gt;
+using namespace std;
+
+	int main() {
+		int n;
+		double number, sum = 0, average;
+							
+		cout << "Masukkan jumlah bilangan: ";
+		cin >> n;
+							
+		for(int i = 1; i <= n; i++) {
+		cout << "Masukkan bilangan ke-" << i << ": ";
+		cin >> number;
+		sum += number;
+	        	}
+							
+		average = sum / n;
+		cout << "Rata-rata dari " << n << " bilangan adalah: " << average;
+							
+		return 0;
+
+		} </pre>
+
+				<h3 class="sub-header">Contoh Hasil</h3>
+				<p> Misal Input = 5 , 7, 7 <br>
+					Hasil = Rata-Rata dari 3 bilangan adalah: 6.333
+				</p>
+
+			</article>
+
+		</div>
+
+		<!-- Footer -->
+		<section id="footer">
+			<p class="copyright">&copy; Andrew Steine & Michael Azarya</a>.</p>
+		</section>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
